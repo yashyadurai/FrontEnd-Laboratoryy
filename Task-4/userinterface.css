@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation Hover Transition */
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ffff !important;
+    transform: scale(1.1);
+}
+
+
+/* Landing Page */
+
+.hero {
+    background-color: #07152e;
+    color: white;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hero Heading */
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* Space Area */
+
+.space {
+    position: relative;
+    height: 400px;
+}
+
+
+/* Rocket */
+
+.rocket {
+    position: absolute;
+    font-size: 80px;
+
+    left: 40%;
+    top: 30%;
+
+    animation: rocketMove 4s infinite;
+}
+
+
+/* Astronaut */
+
+.astronaut {
+    position: absolute;
+    font-size: 60px;
+
+    right: 20%;
+    top: 50%;
+
+    animation: astronautFloat 3s infinite;
+}
+
+
+/* Rocket Keyframe Animation */
+
+@keyframes rocketMove {
+
+    0% {
+        transform: translate(0, 100px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translate(50px, -50px) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(0, 100px) rotate(-10deg);
+    }
+
+}
+
+
+/* Astronaut Keyframe Animation */
+
+@keyframes astronautFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Missions */
+
+.missions {
+    background-color: #f2f2f2;
+}
+
+
+/* Mission Cards */
+
+.mission-card {
+    height: 100%;
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .space {
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .rocket {
+        font-size: 60px;
+    }
+
+    .astronaut {
+        font-size: 45px;
+    }
+
+}

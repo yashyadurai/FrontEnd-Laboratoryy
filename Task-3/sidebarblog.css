@@ -1,0 +1,188 @@
+/* Basic Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Sidebar Layout */
+
+.layout {
+    display: flex;
+    min-height: 500px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 220px;
+    background-color: #444;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #666;
+}
+
+
+/* Main Content */
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    width: 300px;
+
+    /* Box Model */
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Product Image */
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+}
+
+
+/* Product Price */
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Product Button */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Blog Layout */
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Blog Cards */
+
+.blog-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.blog-card a {
+    color: blue;
+    text-decoration: none;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 600px) {
+
+    /* Sidebar moves above content */
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+
+    /* Product Card */
+
+    .product-card {
+        width: 100%;
+    }
+
+
+    /* Blog becomes one column */
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+}
